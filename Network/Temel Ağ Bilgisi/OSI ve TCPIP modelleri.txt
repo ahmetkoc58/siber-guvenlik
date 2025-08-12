@@ -1,0 +1,130 @@
+🌐 OSI Modeli (7 Katman)
+Bu model, ağ iletişimini 7 ayrı katmanda tanımlar. Veri, yukarıdan aşağıya inerken katmanlar arası işlenir, aşağıdan yukarıya çıkarken açılır.
+
+
+
+
+Fiziksel Katman (Physical Layer)
+
+Görev: Veriyi elektriksel sinyaller, ışık dalgaları veya radyo dalgaları şeklinde fiziksel ortamda iletmek.
+
+Örnek: Ethernet kabloları, fiber optik, Wi-Fi sinyali.
+
+Siber güvenlikte önemi: Fiziksel saldırılar (kablo kesme, dinleme cihazı yerleştirme).
+
+
+
+
+Veri Bağlantı Katmanı (Data Link Layer)
+
+Görev: Aynı ağ içindeki cihazlar arasında veri çerçevelerini iletmek, hata kontrolü yapmak, MAC adreslerini kullanmak.
+
+Örnek: Ethernet, PPP, Switch.
+
+Siber güvenlikte önemi: ARP spoofing, MAC adresi sahteciliği.
+
+
+
+
+Ağ Katmanı (Network Layer)
+
+Görev: Verinin kaynak cihazdan hedef cihaza hangi yoldan gideceğine karar vermek (yönlendirme).
+
+Örnek: IP, ICMP, Router.
+
+Siber güvenlikte önemi: IP spoofing, DDoS saldırıları.
+
+
+
+
+Taşıma Katmanı (Transport Layer)
+
+Görev: Veriyi daha küçük parçalara (segment) bölmek, sıralamak, hata kontrolü yapmak, port numaralarını yönetmek.
+
+Örnek: TCP, UDP.
+
+Siber güvenlikte önemi: Port tarama, TCP SYN flood saldırıları.
+
+
+
+
+Oturum Katmanı (Session Layer)
+
+Görev: İki cihaz arasındaki oturumları başlatmak, yönetmek ve sonlandırmak.
+
+Örnek: NetBIOS, RPC.
+
+Siber güvenlikte önemi: Oturum çalma (session hijacking).
+
+
+
+
+Sunum Katmanı (Presentation Layer)
+
+Görev: Veriyi formatlamak, şifrelemek, sıkıştırmak.
+
+Örnek: SSL/TLS, JPEG, PNG.
+
+Siber güvenlikte önemi: Şifreleme kırma, veri manipülasyonu.
+
+
+
+
+Uygulama Katmanı (Application Layer)
+
+Görev: Kullanıcıya en yakın katman, uygulamalar ile ağ arasında köprü kurar.
+
+Örnek: HTTP, HTTPS, FTP, DNS.
+
+Siber güvenlikte önemi: Web saldırıları (SQL injection, XSS).
+
+
+
+
+
+
+
+
+🌐 TCP/IP Modeli (4 Katman)
+Bu model, internet üzerinde kullanılan pratik protokol yapısıdır. OSI’ye göre daha basittir.
+
+Ağ Erişim Katmanı (Network Access Layer)
+
+OSI’nin Fiziksel ve Veri Bağlantı katmanlarını kapsar.
+
+Görev: Veriyi fiziksel ortamda iletmek ve yerel ağ içi iletişimi sağlamak.
+
+Örnek: Ethernet, Wi-Fi.
+
+
+
+
+İnternet Katmanı (Internet Layer)
+
+OSI’nin Ağ Katmanına karşılık gelir.
+
+Görev: Veriye IP adresi ekleyerek hedefe yönlendirmek.
+
+Örnek: IP, ICMP, ARP.
+
+
+
+
+Taşıma Katmanı (Transport Layer)
+
+OSI’deki Taşıma katmanıyla aynı işlevi görür.
+
+Görev: Port numaraları ile uygulamaları ayırt etmek, veri akışını kontrol etmek.
+
+Örnek: TCP, UDP.
+
+
+
+
+Uygulama Katmanı (Application Layer)
+
+OSI’nin Sunum, Oturum ve Uygulama katmanlarını birleştirir.
+
+Görev: Uygulamalar ve kullanıcı ile doğrudan iletişim kurmak.
+
+Örnek: HTTP, HTTPS, FTP, SMTP, DNS.
