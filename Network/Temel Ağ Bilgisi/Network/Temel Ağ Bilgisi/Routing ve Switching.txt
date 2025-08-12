@@ -1,0 +1,68 @@
+🔹 Routing (Yönlendirme)
+Tanım:
+Routing, verinin bir ağdan başka bir ağa hangi yoldan gideceğine karar verme işlemidir.
+Bu işi router (yönlendirici) cihazlar yapar.
+
+
+Çalışma mantığı:
+
+Router, bağlı olduğu tüm ağları bilir.
+
+Gelen paketin hedef IP’sine bakar.
+
+En uygun yolu (route) bulur.
+
+Paketi o yoldan gönderir.
+
+
+Yönlendirme türleri:
+
+
+Statik Routing → Yönler elle tanımlanır (küçük ağlarda).
+
+Dinamik Routing → Router’lar birbirine yol bilgisi gönderir (RIP, OSPF, BGP gibi protokoller).
+
+
+Siber güvenlikte önemi:
+
+Yanlış yönlendirme route hijacking ile trafiğin başka yere gitmesine sebep olabilir.
+
+BGP saldırıları, internetin büyük kısmında kesintiye yol açabilir.
+
+
+
+
+🔹 Switching (Anahtarlama)
+Tanım:
+Switching, aynı ağ içindeki cihazlar arasında veri iletimini sağlar.
+Bu işi switch cihazları yapar.
+
+
+Çalışma mantığı:
+
+Switch, cihazların MAC adreslerini öğrenir.
+
+Gelen paketin hedef MAC adresine bakar.
+
+Paketi sadece o MAC adresinin bağlı olduğu porta iletir.
+
+
+Anahtarlama türleri:
+
+Store-and-Forward → Paket tamamen alınır, kontrol edilir, sonra gönderilir.
+
+Cut-Through → Paket hedefi anlaşıldığı anda gönderilmeye başlanır (daha hızlı).
+
+
+Siber güvenlikte önemi:
+
+Switch üzerinde MAC Flooding saldırısı yapılabilir → Switch öğrenme tablosu dolar, hub gibi tüm portlara yayın yapar.
+
+VLAN’lar ile ağ segmentasyonu sağlanarak güvenlik artırılır.
+
+
+💡 Kısaca fark:
+
+Routing → Farklı ağlar arası veri iletimi (IP adresi ile).
+
+Switching → Aynı ağ içi veri iletimi (MAC adresi ile).

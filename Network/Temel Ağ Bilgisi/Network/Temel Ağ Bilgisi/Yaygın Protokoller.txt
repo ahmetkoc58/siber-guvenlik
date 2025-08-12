@@ -1,0 +1,64 @@
+🌐 1. HTTP (HyperText Transfer Protocol)
+Görevi: Web tarayıcı ile web sunucu arasında veri iletimi sağlar.
+
+Port: TCP 80
+
+Özelliği: Şifreleme yok → veriler düz metin (plaintext) gider.
+
+Siber güvenlik riski: Parola, kredi kartı gibi veriler kolayca dinlenebilir (MITM saldırıları).
+
+
+
+🌐 2. HTTPS (HTTP Secure)
+Görevi: HTTP’nin şifrelenmiş halidir (TLS/SSL ile).
+
+Port: TCP 443
+
+Özelliği: Veri iletimi şifrelenir, kimlik doğrulaması yapılır.
+
+Siber güvenlik avantajı: MITM saldırılarına karşı koruma, veri bütünlüğü sağlar.
+
+
+
+🌐 3. FTP (File Transfer Protocol)
+Görevi: Dosya transferi için kullanılır.
+
+Port: TCP 21 (kontrol), TCP 20 (veri)
+
+Özelliği: Eski versiyonda şifreleme yok, FTPS ile güvenlik eklenir.
+
+Siber güvenlik riski: Parola ve dosya içerikleri düz metin giderse kolayca yakalanabilir.
+
+
+
+🌐 4. SSH (Secure Shell)
+Görevi: Uzak cihazlara güvenli şekilde bağlanmak ve komut çalıştırmak.
+
+Port: TCP 22
+
+Özelliği: Tüm trafik şifrelenir.
+
+Siber güvenlik avantajı: Güvenli uzaktan yönetim, şifrelenmiş veri aktarımı.
+
+
+
+🌐 5. SMTP (Simple Mail Transfer Protocol)
+Görevi: E-posta gönderimi.
+
+Port: TCP 25 (genelde sunucudan sunucuya), TCP 587 (istemci-sunucu).
+
+Özelliği: STARTTLS ile şifreleme eklenebilir.
+
+Siber güvenlik riski: Şifreleme yoksa e-posta içeriği okunabilir.
+
+
+
+🌐 6. IMAP (Internet Message Access Protocol)
+Görevi: E-postaları sunucu üzerinden yönetmek (okuma, klasörleme).
+
+Port: TCP 143 (şifrelenmemiş), TCP 993 (SSL/TLS ile).
+
+Özelliği: E-posta sunucuda kalır, çoklu cihaz erişimi sağlar.
+
+Siber güvenlik avantajı: Şifreleme ile veri gizliliği korunur.
+
