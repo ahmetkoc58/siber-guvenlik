@@ -1,0 +1,43 @@
+🔹 ARP Spoofing / ARP Poisoning Nedir?
+
+Yerel ağlarda (LAN) IP adresi ile MAC adresi eşleşmesini değiştirme saldırısıdır.
+
+Amaç, kurban cihazın ağına giren trafiği saldırgana yönlendirmek.
+
+Bu sayede Man-in-the-Middle (MITM) saldırısı yapılabilir.
+
+
+📌 Çalışma Mantığı
+Normalde cihazlar ARP tablosu tutar (hangi IP, hangi MAC adresine ait).
+
+Saldırgan, ağdaki diğer cihazlara sahte ARP yanıtları gönderir.
+
+Kurban cihaz, saldırganın MAC adresini doğru IP ile eşleşmiş sanır.
+
+Tüm trafik saldırgandan geçer → saldırgan veriyi dinleyebilir, değiştirebilir.
+
+
+📌 Siber Güvenlikte Önemi
+ARP Spoofing ile şunlar yapılabilir:
+
+Parola ve veri hırsızlığı
+
+Trafiği sahte web sitesine yönlendirme
+
+Oturum çalma (session hijacking)
+
+Servis kesintisi (DoS)
+
+
+📌 Korunma Yöntemleri
+Statik ARP kayıtları kullanmak (küçük ağlarda).
+
+Dynamic ARP Inspection (DAI) özelliğini switch’lerde aktif etmek.
+
+ARP tespit araçları (arpwatch, XArp) ile anormallikleri izlemek.
+
+VLAN’lar ile ağ segmentasyonu.
+
+
+💡 Not: ARP Spoofing, OSI 2. katman (Data Link Layer) seviyesinde çalışır.
+

@@ -1,0 +1,46 @@
+🔹 Session Hijacking Nedir?
+
+Türkçe karşılığı “Oturum Ele Geçirme” saldırısıdır.
+
+Kullanıcı ile sunucu arasındaki aktif oturumu çalarak veya taklit ederek sisteme yetkisiz erişim sağlama yöntemidir.
+
+Amaç, kullanıcı giriş bilgilerini bilmeden onun oturum haklarını kullanmak.
+
+
+📌 Çalışma Mantığı
+Kullanıcı bir siteye giriş yapar → Sunucu, kullanıcıya session ID (oturum kimliği) verir.
+
+Bu session ID, genelde çerezlerde (cookies) veya URL parametrelerinde saklanır.
+
+Saldırgan bu session ID’yi ele geçirirse, kullanıcıymış gibi davranabilir.
+
+
+📌 Session Hijacking Yöntemleri
+Sniffing → HTTP trafiğinde çerezleri yakalamak.
+
+Cross-Site Scripting (XSS) → Zararlı JavaScript ile çerez çalmak.
+
+Session Fixation → Kullanıcıyı önceden belirlenmiş bir session ID ile giriş yapmaya zorlamak.
+
+MITM → Trafiği dinleyerek session bilgilerini almak.
+
+
+📌 Siber Güvenlikte Önemi
+Banka, e-ticaret, e-posta gibi oturum tabanlı hizmetlerde tam yetki devralma imkanı verir.
+
+Parola değiştirmeye bile gerek kalmadan sisteme sızılabilir.
+
+
+📌 Korunma Yöntemleri
+HTTPS kullanmak (session ID şifrelenmiş kanaldan gider).
+
+Session ID’leri tahmin edilemeyecek kadar karmaşık yapmak.
+
+Oturum zaman aşımı (timeout) ayarlamak.
+
+Çerezlere HttpOnly ve Secure bayrakları eklemek.
+
+IP ve cihaz kontrolü yaparak session’ı bağlamak.
+
+
+💡 Not: Session hijacking genellikle Uygulama Katmanı seviyesinde gerçekleşir ama saldırı vektörü ağ katmanlarından da gelebilir.

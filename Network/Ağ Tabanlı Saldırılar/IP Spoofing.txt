@@ -1,0 +1,42 @@
+🔹 IP Spoofing Nedir?
+
+IP spoofing, ağ paketlerinin kaynak IP adresini sahte bir adresle değiştirerek gönderilmesidir.
+
+Amaç, paketin başka bir cihazdan geliyormuş gibi görünmesini sağlamak.
+
+Bu teknik genelde anonimlik sağlamak, saldırının kaynağını gizlemek veya güvenilir IP taklidi yapmak için kullanılır.
+
+
+📌 Çalışma Mantığı
+Normalde her IP paketi, kaynak (source) ve hedef (destination) IP adreslerini içerir.
+
+Saldırgan, paketin source IP kısmını değiştirerek sahte bir IP yazar.
+
+Hedef cihaz, paketin gerçek kaynağını bilmeden yanıtı sahte IP’ye gönderir.
+
+Saldırgan, yanıtı alamaz ama bu yöntemi genellikle tek yönlü saldırılar (DoS/DDoS) için kullanır.
+
+
+📌 Kullanım Alanları
+DDoS Saldırıları → Farklı IP’lerden geliyormuş gibi görünerek saldırıyı engellemeyi zorlaştırmak.
+
+MITM Saldırıları → Güvenilir IP’yi taklit ederek trafiğe sızmak.
+
+Ağ Tabanlı Kimlik Doğrulama Atlama → IP’ye göre erişim izni verilen sistemleri kandırmak.
+
+
+📌 Siber Güvenlikte Önemi
+Kaynak IP’ye güvenen sistemler bu saldırıya açık olur.
+
+Özellikle UDP gibi bağlantısız protokollerde kolayca uygulanabilir.
+
+
+📌 Korunma Yöntemleri
+Ingress/Egress Filtering → Ağ yönlendiricilerinde, sahte IP’li paketlerin içeri girmesini ve dışarı çıkmasını engellemek.
+
+Paket filtreleme firewall kuralları.
+
+Kimlik doğrulamayı sadece IP’ye göre yapmamak (ek şifreleme ve token kullanmak).
+
+
+💡 Not: IP spoofing, genelde OSI 3. katman (Network Layer) seviyesinde gerçekleşir.

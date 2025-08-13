@@ -1,0 +1,50 @@
+
+🔹 DoS (Denial of Service) Saldırısı
+
+Amaç: Hedef sistemi veya ağı kullanılamaz hale getirmek.
+
+Çalışma mantığı: Hedefe çok fazla istek göndererek CPU, RAM, bant genişliği gibi kaynakları tüketmek.
+
+Kaynak: Tek bir saldırgan veya tek bir cihazdan yapılır.
+
+📌 Örnek:
+
+Bir web sitesine saniyede binlerce gereksiz HTTP isteği göndermek, sitenin normal kullanıcıya cevap verememesine yol açar.
+
+
+
+🔹 DDoS (Distributed Denial of Service) Saldırısı
+Dağıtık versiyon → Saldırı birçok cihazdan (botnet) aynı anda yapılır.
+
+Kaynak IP’ler farklı olduğu için engellemek çok daha zordur.
+
+Genelde zombi bilgisayarlar veya IoT cihazları kullanılır.
+
+
+📌 Örnek Saldırı Tipleri:
+
+Volumetrik Saldırılar → Bant genişliğini doldurur (UDP Flood, ICMP Flood).
+
+Protokol Saldırıları → Ağ cihazlarının kaynaklarını tüketir (SYN Flood, Ping of Death).
+
+Uygulama Katmanı Saldırıları → Web uygulamalarını hedefler (HTTP GET/POST Flood).
+
+
+📌 Siber Güvenlikte Önemi
+DoS/DDoS saldırıları hizmet kesintisine yol açar (Service Outage).
+
+Finans, e-ticaret, devlet sitelerinde büyük maddi zarara ve itibar kaybına sebep olur.
+
+
+📌 Korunma Yöntemleri
+Rate Limiting → Belirli süre içinde gelen istek sayısını sınırlamak.
+
+Firewall / IPS ayarları → Anormal trafik engelleme.
+
+DDoS Koruma Servisleri → Cloudflare, Akamai, AWS Shield.
+
+Anycast Routing → Trafiği farklı veri merkezlerine dağıtmak.
+
+
+💡 Not: DDoS tamamen engellenemese de etkisi azaltılabilir.
+

@@ -1,0 +1,42 @@
+🔹 DNS Spoofing / DNS Cache Poisoning Nedir?
+
+DNS sistemine yanlış kayıt ekleyerek kullanıcıları sahte sitelere yönlendirme saldırısıdır.
+
+Kullanıcı farkında olmadan sahte siteye gider, gerçek siteye gittiğini sanır.
+
+
+📌 Çalışma Mantığı
+Kullanıcı tarayıcıya bankasite.com yazar.
+
+Normalde DNS sunucusu doğru IP adresini döndürür.
+
+Saldırgan DNS sunucusuna veya kullanıcının DNS önbelleğine yanlış IP adresi ekler.
+
+Kullanıcı sahte IP’ye yönlendirilir → sahte site üzerinden veri çalınır.
+
+
+📌 DNS Spoofing Yöntemleri
+Local Cache Poisoning → Kullanıcının bilgisayarındaki DNS önbelleğini değiştirmek.
+
+Remote DNS Poisoning → DNS sunucusuna sahte kayıt eklemek.
+
+MITM ile DNS Manipülasyonu → Trafik ortasında DNS cevaplarını değiştirmek.
+
+
+📌 Siber Güvenlikte Önemi
+Kimlik avı (phishing) saldırılarında çok kullanılır.
+
+SSL sertifikası yoksa kullanıcıların bunu fark etmesi zordur.
+
+
+📌 Korunma Yöntemleri
+DNSSEC kullanmak (DNS kayıtlarını dijital imza ile doğrulama).
+
+Güvenilir DNS sunucuları kullanmak (Google DNS 8.8.8.8, Cloudflare 1.1.1.1).
+
+HTTPS kullanarak sahte IP’ye yönlendirilse bile veri çalınmasını zorlaştırmak.
+
+DNS önbelleğini düzenli temizlemek.
+
+
+💡 Not: Bu saldırı genelde OSI 3. katman (Network Layer) ile Uygulama Katmanı arasında etki gösterir.

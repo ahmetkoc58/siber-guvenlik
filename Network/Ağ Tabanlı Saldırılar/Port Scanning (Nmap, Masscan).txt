@@ -1,0 +1,48 @@
+🔹 Port Scanning Nedir?
+
+Port taraması, hedef cihaz veya ağ üzerindeki açık portları ve bu portlarda çalışan servisleri tespit etme işlemidir.
+
+Amaç, potansiyel giriş noktalarını bulmaktır.
+
+Saldırganlar için keşif (reconnaissance) aşamasının önemli bir parçasıdır; güvenlik uzmanları için ise açıkları tespit etmenin ilk adımıdır.
+
+
+📌 Çalışma Mantığı
+Her cihazın IP adresi vardır ve bu cihaz üzerinde 0–65535 arası port bulunur.
+
+Bazı portlar belirli servisler için kullanılır (örn. 80 → HTTP, 443 → HTTPS).
+
+Port tarama aracı, belirli IP’lere paket göndererek hangi portların açık, kapalı veya filtrelenmiş olduğunu belirler.
+
+
+📌 Kullanılan Araçlar
+Nmap → En popüler port tarama aracı. Servis, versiyon, işletim sistemi tespiti de yapabilir.
+
+Masscan → Çok hızlı tarama aracı, milyonlarca IP’yi kısa sürede tarayabilir.
+
+
+📌 Port Tarama Teknikleri
+TCP Connect Scan → Tam bağlantı kurar (3-way handshake).
+
+SYN Scan (Half-Open) → Yalnızca SYN gönderir, hızlı ve stealth (gizli) yöntemdir.
+
+UDP Scan → UDP tabanlı servisleri tarar.
+
+Version Scan → Port açık olduğunda hangi servis/versiyonun çalıştığını belirler.
+
+
+📌 Siber Güvenlikte Önemi
+Açık portlar, saldırılar için giriş noktasıdır.
+
+Yetkisiz port taraması genellikle saldırı öncesi izinsiz keşif aşamasıdır.
+
+
+📌 Korunma Yöntemleri
+Gereksiz portları kapatmak.
+
+Firewall ile izin verilmeyen portları filtrelemek.
+
+IDS/IPS ile şüpheli tarama aktivitelerini tespit etmek.
+
+
+💡 Not: Port taraması OSI 3. ve 4. katman seviyesinde yapılır (IP ve TCP/UDP).

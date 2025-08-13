@@ -1,0 +1,47 @@
+🔹 MITM (Man-in-the-Middle) Saldırısı Nedir?
+
+Türkçe karşılığı **“Ortadaki Adam Saldırısı”**dır.
+
+İki taraf arasındaki iletişime gizlice girerek verileri dinleme, değiştirme veya çalma saldırısıdır.
+
+Kurbanlar, iletişimin doğrudan karşılıklı olduğunu zanneder; aslında tüm veri saldırgandan geçer.
+
+
+📌 Çalışma Mantığı
+İki cihaz (örn. bilgisayar ve web sunucusu) normalde doğrudan iletişim kurar.
+
+Saldırgan, ağ trafiğini kendi üzerinden geçirecek şekilde yönlendirir (örn. ARP spoofing ile).
+
+Tüm gelen/giden veriyi okur, değiştirebilir veya kaydedebilir.
+
+
+📌 MITM Saldırı Yöntemleri
+ARP Spoofing → Yerel ağda IP–MAC eşleşmelerini manipüle ederek trafiği kendine çekmek.
+
+
+DNS Spoofing → Kullanıcıyı sahte bir web sitesine yönlendirmek.
+
+
+Rogue Access Point → Sahte Wi-Fi noktası kurmak, bağlananların trafiğini dinlemek.
+
+
+HTTPS Downgrade → Şifreli bağlantıyı HTTP’ye düşürüp veriyi okunabilir hale getirmek.
+
+
+📌 Siber Güvenlikte Önemi
+Parola, kredi kartı bilgisi, e-posta içeriği gibi hassas veriler çalınabilir.
+
+Kimlik doğrulama oturumları ele geçirilebilir (session hijacking).
+
+
+📌 Korunma Yöntemleri
+HTTPS / SSL / TLS kullanmak.
+
+Halka açık Wi-Fi’da VPN kullanmak.
+
+ARP/DNS spoofing tespit araçları (örn. arpwatch).
+
+Wi-Fi WPA3 gibi güçlü şifreleme standartlarını tercih etmek.
+
+
+💡 Not: MITM saldırıları genellikle OSI 2. ve 3. katman seviyesinde başlar, ama hedeflenen veri uygulama katmanındadır.

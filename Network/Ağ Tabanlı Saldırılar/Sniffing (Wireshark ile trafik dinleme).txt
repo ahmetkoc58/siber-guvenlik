@@ -1,0 +1,53 @@
+🔹 Sniffing Nedir?
+
+Sniffing, ağ üzerinden geçen veri paketlerini dinleme ve yakalama işlemidir.
+
+Bu işlem için genellikle paket yakalama (packet capture) yazılımları kullanılır.
+
+Amaç, ağ trafiğini analiz etmek veya hassas bilgileri (parola, oturum çerezi vb.) ele geçirmek olabilir.
+
+
+📌 Çalışma Türleri
+Pasif Sniffing
+
+Saldırgan sadece ağı dinler, trafiğe müdahale etmez.
+
+Özellikle hub tabanlı veya kablosuz ağlarda kolaydır.
+
+
+Aktif Sniffing
+
+Saldırgan, trafiğin kendi üzerinden geçmesi için ARP spoofing, MITM gibi yöntemler kullanır.
+
+Böylece normalde göremeyeceği paketleri yakalar.
+
+
+📌 Kullanılan Araçlar
+Wireshark → En popüler paket analiz aracı.
+
+tcpdump → Terminal tabanlı, hızlı paket yakalama.
+
+Ettercap → MITM ve sniffing aracı.
+
+
+📌 Siber Güvenlikte Önemi
+Sniffing ile şunlar yapılabilir:
+
+HTTP trafiğinde kullanıcı adı/şifre yakalama
+
+Oturum çerezlerini ele geçirerek session hijacking
+
+DNS sorgularını izleyerek ziyaret edilen siteleri tespit etme
+
+
+📌 Korunma Yöntemleri
+HTTPS / TLS kullanmak (şifrelenmemiş trafiği dinlemek anlamsız hale gelir).
+
+VPN ile tüm trafiği şifrelemek.
+
+Switch’lerde port security ve VLAN segmentasyonu.
+
+Kablosuz ağlarda WPA3 gibi güçlü şifreleme standartları.
+
+
+💡 Not: Sniffing saldırıları genellikle OSI 2. katman (Data Link Layer) ve 3. katman (Network Layer) seviyesinde yapılır.
